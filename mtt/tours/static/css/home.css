@@ -1,0 +1,66 @@
+/* Set the height of the carousel images to 2/3 of the viewport height */
+.carousel-item img {
+    height: 66.67vh; /* 2/3 of the viewport height */
+    object-fit: cover; /* Ensures the image covers the area without distortion */
+}
+
+/* Vertical gap between sections */
+.section-gap {
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
+/* Interactive header styling */
+.interactive-header {
+    color: #007bff; /* Blue color */
+    font-family: 'Poppins', sans-serif; /* Use a modern font */
+    font-weight: 600; /* Semi-bold */
+    transition: color 0.3s ease, transform 0.3s ease; /* Smooth transitions */
+}
+
+.interactive-header:hover {
+    color: #0056b3; /* Darker blue on hover */
+    transform: scale(1.05); /* Slightly enlarge on hover */
+}
+
+/* Section header styling */
+.section-header {
+    font-family: 'Poppins', sans-serif;
+    font-size: 2rem;
+    font-weight: 700;
+    color: #333; /* Dark gray */
+    margin-bottom: 20px;
+}
+
+/* Light grey background for sections */
+.light-grey-color-bg {
+    background-color: #f8f9fa; /* Light grey */
+}
+/* Card Styling */
+.card {
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.card-img-top {
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.card-title {
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: #333;
+}
+
+.card-text {
+    font-size: 0.9rem;
+    color: #666;
+}

@@ -1,0 +1,49 @@
+
+{% extends 'base.html' %}
+
+{% block title %}Destinations - Modhumati Tours and Travels{% endblock %}
+
+{% block content %}
+<div class="container mt-5">
+    <!-- Popular Destinations Section -->
+    <section class="light-grey-color-bg section-gap">
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <div class="text-center mb-5">
+                        <h3 class="text-center custom-blue-color-text mb-5">POPULAR DESTINATIONS</h3>
+                        <hr class="style-three mt-2">
+                    </div>
+                </div>
+            </div>
+
+            <!-- Iterate over grouped locations -->
+            {% for region, locations in grouped_locations.items %}
+            <div class="row mb-4">
+                <div class="col">
+                    <h3 class="text-center">{{ region }}</h3>
+                    <hr class="style-three mt-2">
+                </div>
+            </div>
+
+            <div class="row">
+                {% for location in locations %}
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100">
+                        <!-- Location Image -->
+                        <img src="{{ location.image.url }}" class="card-img-top" alt="{{ location.name }}" style="height: 200px; object-fit: cover;">
+                        <div class="card-body">
+                            <!-- Location Name -->
+                            <h5 class="card-title">{{ location.name }}</h5>
+                            <!-- Location Description -->
+                            <p class="card-text">{{ location.description }}</p>
+                        </div>
+                    </div>
+                </div>
+                {% endfor %}
+            </div>
+            {% endfor %}
+        </div>
+    </section>
+</div>
+{% endblock %}
