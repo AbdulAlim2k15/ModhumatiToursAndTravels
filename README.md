@@ -1,4 +1,9 @@
 # Modhumati Tours and Travels
+![Django](https://img.shields.io/badge/Django-5.1.5-green)
+![Python](https://img.shields.io/badge/Python-3.x-blue)
+![HTML](https://img.shields.io/badge/HTML-5-red)
+![CSS](https://img.shields.io/badge/CSS-3-red)
+
 
 A web-based application for Modhumati Tours and Travels to showcase services, destinations, visa assistance, and team members, built using Django 5.1.5.
 
