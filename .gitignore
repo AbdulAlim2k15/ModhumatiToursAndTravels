@@ -1,0 +1,24 @@
+ECHO is on.
+# Ignore virtual environments
+env/
+venv/
+
+# Python cache files
+*.pyc
+*.pyo
+__pycache__/
+
+# Django-related files
+db.sqlite3
+*.log
+*.pot
+*.py[co]
+
+# VSCode files
+.vscode/
+
+# MacOS system files
+.DS_Store
+
+# Byte-compiled Python files
+*.pyc
